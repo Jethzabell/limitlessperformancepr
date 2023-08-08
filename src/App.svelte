@@ -8,17 +8,16 @@
   let whatsAppBAFF = "https://wa.me/message/VOMBCO73LC7LD1";
   let formLPF = "https://form.jotform.com/210524379360857";
   let formBAFF = "https://form.jotform.com/211533091932854";
-  let phoneLPF = "";
   let phoneBAFF = "7875462042";
   let payPal = "https://paypal.me/teamlmitless";
   let athMovil = whatsAppLPF;
   let LPF = "Limitless Performance & Fitness";
   let BAFF = "BA Functional Fitness";
   let BAlogo = "./BALogo.svg";
-  let LPFlogo = "./LPFLogo.png";
+  let BAHorario = "./horario.png";
+  let BAPaquetes = "./paquetes.png";
   let trainerNeslie = "./neslie.jpg";
   let trainerYadira = "./yadira.jpg";
-  let trainerLlenesis = "./llenesis.jpg";
 </script>
 
 <main>
@@ -27,29 +26,29 @@
     <div class="flex-grow pt-4">
       <div class="tooltip tooltip-bottom" data-tip="Trainer Yadira">
         <div class="avatar">
-          <div class="w-24 rounded-full">
+          <div class="w-32 rounded-full">
             <img src={trainerYadira} alt="trainerYadira"/>
           </div>
         </div>
       </div>
       <div class="tooltip tooltip-bottom" data-tip="Trainer Neslie">
         <div class="avatar">
-          <div class="w-24 rounded-full">
-            <img src={trainerNeslie} alt="trainerNeslie"/>
+          <div class="w-32 rounded-full">
+            <img src={BAlogo} alt={BAFF}/>
           </div>
         </div>
       </div>
-      <div class="tooltip tooltip-bottom" data-tip="Trainer Indira">
+      <div class="tooltip tooltip-bottom" data-tip="Trainer Neslie">
         <div class="avatar">
-          <div class="w-24 rounded-full">
-            <img src={trainerLlenesis} alt="trainerLlenesis" />
+          <div class="w-32 rounded-full">
+            <img src={trainerNeslie} alt="trainerNeslie"/>
           </div>
         </div>
       </div>
       <div class="intro">
         <p>
-          Nos especializamos en entrenamiento deportivo, personal y
-          cross-training
+          Nuestra sesión de Cross Training es una experiencia grupal que combina una variedad de ejercicios de alta intensidad (HIIT), diseñados tanto para fortalecer como para mejorar la salud cardiovascular, abarcando todos los grupos musculares.
+          Nuestro enfoque principal es mejorar la condición física de nuestros participantes y elevar su calidad de vida. Lo mejor de todo es que esta clase es adaptable para personas de todas las edades y niveles de condición física. ¡Únete a nosotros y transforma tu rutina de ejercicios!
         </p>
       </div>
       <div class="rating gap-1">
@@ -175,23 +174,39 @@
           <line x1="12" y1="9" x2="12" y2="15" /></svg
         >
       </div>
+    
       <!-- <p class="titulo">Expertos con mas de 15 anos</p> -->
-      <div class="grid gap-4 grid-cols-2">
-        <div class="w-24 pt-4 logos"><img src={LPFlogo} alt={LPF} /></div>
-        <div class="w-24 logos"><img src={BAlogo} alt={BAFF} /></div>
-        <div>
-          <a href={instagramLPF}
-            ><button class="btn btn-block">Instagram</button></a
-          >
+      <div class="grid gap-4">
+
+        <!-- The button to open modal -->
+        <label for="my-modal-3" class="btn modal-button">PRECIOS</label>
+
+        <!-- Put this part before </body> tag -->
+        <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box relative">
+            <label for="my-modal-3"class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+            <div>
+              <img class="rounded-xl" alt="paquetes" src={BAPaquetes} />
+            </div>
+          </div>
         </div>
-        <div>
+       
+          <!-- The button to open modal -->
+       <label for="my-modal-2" class="btn modal-button">Horarios</label>
+       <!-- Put this part before </body> tag -->
+       <input type="checkbox" id="my-modal-2" class="modal-toggle" />
+       <div class="modal">
+         <div class="modal-box relative">
+           <label for="my-modal-2"class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+           <div>
+             <img class="rounded-xl" alt="horario" src={BAHorario} />
+           </div>
+         </div>
+       </div>
+       <div>
           <a href={instagramBAFF}
             ><button class="btn btn-block">Instagram</button></a
-          >
-        </div>
-        <div>
-          <a href={facebookLPF}
-            ><button class="btn btn-block">Facebook</button></a
           >
         </div>
         <div>
@@ -200,30 +215,14 @@
           >
         </div>
         <div>
-          <a href={whatsAppLPF}
-            ><button class="btn btn-block">whatsApp</button></a
-          >
-        </div>
-        <div>
           <a href={whatsAppBAFF}
             ><button class="btn btn-block">whatsApp</button></a
-          >
-        </div>
-        <div class="tooltip" data-tip="(787)932-4322">
-          <a type="tel" href="tel:7879324322"
-            ><button class="btn btn-block">Telefono</button></a
           >
         </div>
         <div class="tooltip" data-tip="(787)546-2042">
           <a type="tel" href="tel:7875462042"
             ><button class="btn btn-block">Telefono</button></a
           >
-        </div>
-        <div>
-          <a href={formLPF}><button class="btn btn-block">Form</button></a>
-        </div>
-        <div>
-          <a href={formBAFF}><button class="btn btn-block">Form</button></a>
         </div>
       </div>
       <!-- -space-x-6 -->
